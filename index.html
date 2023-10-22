@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Pendataan Mahasiswa 2023</title>
+</head>
+<body>
+    <div id="root">
+        <nav>
+            <div class="nav-title">
+                <h1>
+                    Pendataan Mahasiswa 2023
+                </h1>
+            </div>
+            <ul>
+                <li><a href="/">Beranda</a></li>
+                <li><a href="./daftarmahasiswa.html">Daftar Mahasiswa</a></li>
+                <li><a href="./pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header>
+                <p>
+                    <b>PDM 2023</b>
+                </P>
+            </header>
+            <main class="login-main">
+                <div class="title-page">
+                    <h2>
+                        Selamat Datang di Pendataan Mahasiswa 2023
+                    </h2>
+                </div>
+                <div class="count_mhs_container">
+                    <div class="container">
+                        <h3>
+                            Jumlah Mahasiswa
+                        </h3>
+                        <h1 id="count_total_mhs">
+    
+                        </h1>
+                    </div>
+                    <h3>Mahasiswa Berdasarkan Jenis Kelamin</h3>
+                    <div class="container-row">
+                        <div class="container">
+                            <h3>
+                                Jumlah Mahasiswa Laki-laki
+                            </h3>
+                            <h1 id="count_laki_mhs">
+    
+                            </h1>
+                        </div>
+                        <div class="container">
+                            <h3>
+                                Jumlah Mahasiswa Perempuan
+                            </h3>
+                            <h1 id="count_perempuan_mhs">
+    
+                            </h1>
+                        </div>
+                    </div>
+                    <h3>Mahasiswa Berdasarkan Program Studi</h3>
+                    <div class="container-row">
+                        <div class="container">
+                            <h3>
+                                Sistem Informasi
+                            </h3>
+                            <h1 id="count_si">
+    
+                            </h1>
+                        </div>
+                        <div class="container">
+                            <h3>
+                                Teknik Informatika
+                            </h3>
+                            <h1 id="count_if">
+    
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    &copy; 2023 - Pendataan Mahasiswa 2023
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script src="./assets/index.js">
+        document.getElementById("count_total_mhs").innerHTML = localStorage.getItem("count_total_mhs");
+    </script>
+</body>
+</html>

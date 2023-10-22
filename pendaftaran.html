@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Pendataan Mahasiswa 2023</title>
+</head>
+<body>
+    <div id="root">
+        <nav>
+            <div class="nav-title">
+                <h1>
+                    Pendataan Mahasiswa 2023
+                </h1>
+            </div>
+            <ul>
+                <li><a href="/">Beranda</a></li>
+                <li><a href="./daftarmahasiswa.html">Daftar Mahasiswa</a></li>
+                <li><a href="./pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header class="jumbotron">
+                <p>
+                    <b>PDM 2023</b>/Pendaftaran
+                </P>
+            </header>
+            <main class="login-main">
+                <div class="title-page">
+                    <h2>Pendaftaran</h2>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <div class="input-field">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div class="input-field">
+                            <label for="nim">NIM</label>
+                            <input type="text" id="nim" name="nim" required placeholder="Masukkan NIM">
+                        </div>
+                        <div class="input-field">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" id="alamat" name="alamat" required placeholder="Masukkan alamat">
+                        </div>
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Masukkan email">
+                        </div>
+                        <div class="input-field">
+                            <label for="prodi">Program Studi</label>
+                            <select id="prodi" name="prodi" required>
+                                <option value="">Pilih Program Studi</option>
+                                <option value="Teknik Informatika">Teknik Informatika</option>
+                                <option value="Sistem Informasi">Sistem Informasi</option>
+                            </select>
+                        </div>
+                        <div class="radio-group">
+                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                            <div class="radio-input">
+                                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+                                <label for="laki-laki">Laki-laki</label>
+                            </div>
+                            <div class="radio-input">
+                                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <input type="submit" class="submit" value="Kirim">
+                    </form>
+                </div>         
+            </main>
+            <footer>
+                <p>
+                    &copy; 2023 - Pendataan Mahasiswa 2023
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

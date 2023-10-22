@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter, sans-serif;
+}
+#root {
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    display: inline;
+    top: 0;
+    position: sticky;
+    width: 230px;
+    padding: 20px;
+    display: inline;
+    height: 100vh;
+}
+.nav-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul li a:active {
+    font-weight: 600;
+}
+nav, header, footer {
+    color: #FFFFFF;
+    background-color: cornflowerblue;
+}
+.content {
+    flex: 1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+header {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header p {
+    font-size: 32px;
+}
+main {
+    flex: 1;
+}
+footer {
+    padding: 15px;
+    text-align: center;
+}
+.login-main {
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.count_mhs_container {
+    flex: 1;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(100, 149, 237, .5);
+}
+.container {
+    gap: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-row {
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+#count_perempuan_mhs {
+    color: #e45b72;
+}
+#count_laki_mhs {
+    color: blue;
+}
+table {
+    border-collapse: collapse;
+}
+thead {
+    background-color: rgba(100, 149, 237, .5);
+}
+th, td {
+    padding: 10px 0;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+input, select {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+}
+.form-container {
+    flex: 1;
+    width: 512px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+form {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+input:focus, select:focus {
+    outline: none;
+}
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ccc;
+}
+.input-field {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+.radio-group {
+    gap: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+.radio-group, .input-field {
+    border-radius: 5px;
+}
+.submit {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
