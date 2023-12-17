@@ -1,2 +1,4 @@
-# UTS_Pemweb_2023
-Repositori UTS Pemrogaman Web 2023 
+# UAS_Pemweb_2023
+Repositori UAS Pemrogaman Web 2023 
+Nama : Ichza Auliya Gumilar
+NIM : 120140188
